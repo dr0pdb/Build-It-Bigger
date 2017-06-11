@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/jokesgce/build/libs/jokesgce-android-endpoints.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92df4d377a7fb4ab57a5128cf9facfa7466397">
+        <dex dex="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/app/build/intermediates/pre-dexed/debug/jokesgce-android-endpoints_735159d23af00715d38d749543d8844f4c25dc5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/jokelibrary/build/libs/jokelibrary.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="64ca306987f7f4846c6289a1f953d954ceb3264d">
+        <dex dex="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/app/build/intermediates/pre-dexed/debug/jokelibrary_86b4991228d92c692df9a74902e61c4da32cb35f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/displayjokes/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f29b9d09d762483bbfb2ec38d92cd80653842c02">
+        <dex dex="/media/srv_twry/work/Projects/Android-Projects/BuildItBigger/app/build/intermediates/pre-dexed/debug/classes_c80b66ec761e5a0bee9dbde6667239efe6f0dfd5.jar" />
+    </item>
+
+</items>
