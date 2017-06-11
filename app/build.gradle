@@ -18,6 +18,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        paid {
+            applicationIdSuffix ".paid"
+            versionNameSuffix "-paid"
+        }
+        free {
+            applicationIdSuffix ".free"
+            versionNameSuffix "-free"
+        }
+    }
+    sourceSets { paid { java.srcDirs = ['src/paid/java', 'src/paid/java/'] } }
 }
 
 dependencies {
@@ -26,7 +38,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(':displayjokes')
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    freeCompile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.google.android.gms:play-services-ads:11.0.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile project(path: ':jokesgce', configuration: 'android-endpoints')
