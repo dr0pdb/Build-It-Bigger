@@ -15,6 +15,15 @@ import java.io.IOException;
 public class FetchJokeAsyncTask extends AsyncTask<Void,Void,String> {
 
     private MyApi myApiService = null;
+    private AsyncTaskCompletionListener asyncTaskCompletionListener;
+    private AsyncTaskCompletionListenerTest asyncTaskCompletionListenerTest;
+
+    public FetchJokeAsyncTask(AsyncTaskCompletionListener asyncTaskCompletionListener) {
+        this.asyncTaskCompletionListener = asyncTaskCompletionListener;
+    }
+    public FetchJokeAsyncTask(AsyncTaskCompletionListenerTest asyncTaskCompletionListenerTest){
+        this.asyncTaskCompletionListenerTest= asyncTaskCompletionListenerTest;
+    }
 
     @Override
     protected String doInBackground(Void... params) {
@@ -31,5 +40,23 @@ public class FetchJokeAsyncTask extends AsyncTask<Void,Void,String> {
             e.printStackTrace();
             return e.getMessage();
         }
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        if (asyncTaskCompletionListener !=null){
+            asyncTaskCompletionListener.onResponse(true,s);
+        }
+        if (asyncTaskCompletionListenerTest !=null){
+            asyncTaskCompletionListenerTest.onResponse(true,s);
+        }
+    }
+
+    public interface AsyncTaskCompletionListener{
+        void onResponse(boolean isSuccess, String result);
+    }
+
+    public interface AsyncTaskCompletionListenerTest{
+        void onResponse(boolean isSuccess, String result);
     }
 }
