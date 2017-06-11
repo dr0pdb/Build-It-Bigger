@@ -1,6 +1,6 @@
 # Build It Bigger
 
-This is my fourth Project in the Android Developer Nanodegree. The project guidelines are as follows:-
+This is my fourth Project in the [Android Developers Nanodegree](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801). The project guidelines are as follows:-
 
 ## Gradle for Android and Java Final Project
 
