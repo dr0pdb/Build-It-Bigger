@@ -39,7 +39,7 @@ dependencies {
     })
     compile project(':displayjokes')
     compile 'com.android.support:appcompat-v7:25.3.1'
-    freeCompile 'com.google.android.gms:play-services-ads:11.0.0'
+    freeCompile 'com.google.android.gms:play-services-ads:11.0.1'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
     compile project(path: ':jokesgce', configuration: 'android-endpoints')
     compile 'com.google.http-client:google-http-client-android:1.22.0'
